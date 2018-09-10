@@ -1,0 +1,16 @@
+<nz-spin [nzSpinning]="isSpinning">
+  <div class="box" [ngStyle]="{'height': snHeight}">
+    <div #container class="container">
+      <img #imageInstance class="image rotate0" [src]="nowImgUrl" />
+      <div (click)="prev()" class="pageTurnSpan prev"><i class="anticon anticon-left"></i></div>
+      <div (click)="next()" class="pageTurnSpan next"><i class="anticon anticon-right"></i></div>
+      <div class="tool">
+        <div class="toolct">
+          <span class="oper_bigger" title="放大图片" (click)="zoom()"><i class="anticon anticon-plus-circle-o"></i></span>
+          <span class="oper_smaller" title="缩小图片" (click)="zoomOut()"><i class="anticon anticon-minus-circle-o"></i></span>
+          <span class="oper_rotate" title="向右旋转" (click)="rotate()"><i class="anticon anticon-reload"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</nz-spin>

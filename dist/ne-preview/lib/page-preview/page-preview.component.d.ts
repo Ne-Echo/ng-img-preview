@@ -1,0 +1,32 @@
+import { OnInit, ElementRef, EventEmitter } from '@angular/core';
+import { IMGLIST } from '../model/ne-preview.model';
+export declare class PagePreviewComponent implements OnInit {
+    focusElement: any;
+    zoomRatio: number;
+    imgRatio: number;
+    isSpinning: boolean;
+    mouseDown: boolean;
+    disX: number;
+    disY: number;
+    nextDeg: number;
+    nowImgUrl: string;
+    nowImgIndex: number;
+    constructor();
+    imgList: IMGLIST[];
+    snHeight?: string;
+    snPageBtnClick: EventEmitter<number>;
+    container: ElementRef;
+    imageInstance: ElementRef;
+    ngOnInit(): void;
+    onMousedown(event: MouseEvent): void;
+    onMousemove(event: MouseEvent): void;
+    onMouseup(): void;
+    mousewheel(event: MouseEvent | any): void;
+    setImgSize(): void;
+    prev(): void;
+    next(): void;
+    zoom(): void;
+    zoomOut(): void;
+    rotate(): void;
+    updateImgSize(type: any, newImgWidth: any, newImgHeight: any): void;
+}

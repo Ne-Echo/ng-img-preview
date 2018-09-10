@@ -1,0 +1,28 @@
+{
+  "name": "ne-img-preview",
+  "version": "0.0.5",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "viewerjs": "^1.2.0"
+  },
+  "keywords": [
+    "image",
+    "preview",
+    "angular",
+    "viewer"
+  ],
+  "main": "bundles/ne-img-preview.umd.js",
+  "module": "fesm5/ne-img-preview.js",
+  "es2015": "fesm2015/ne-img-preview.js",
+  "esm5": "esm5/ne-img-preview.js",
+  "esm2015": "esm2015/ne-img-preview.js",
+  "fesm5": "fesm5/ne-img-preview.js",
+  "fesm2015": "fesm2015/ne-img-preview.js",
+  "typings": "ne-img-preview.d.ts",
+  "metadata": "ne-img-preview.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

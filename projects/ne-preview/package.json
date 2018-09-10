@@ -1,0 +1,15 @@
+{
+  "name": "ne-img-preview",
+  "version": "0.0.5",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0",
+    "viewerjs": "^1.2.0"
+  },
+  "keywords": [
+    "image",
+    "preview",
+    "angular",
+    "viewer"
+  ]
+}
